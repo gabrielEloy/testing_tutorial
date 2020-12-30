@@ -16,7 +16,7 @@ export default function ItemsList({data, onDelete}) {
             <FlatList 
                 data={data}
                 renderItem={renderFunction}
-                keyExtractor={item => item.id}
+                keyExtractor={item => String(item.id)}
             />
         </View>
     )

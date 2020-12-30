@@ -4,7 +4,7 @@ import { View, Text, TextInput, StyleSheet, TouchableOpacity } from 'react-nativ
 export default function AddList({value, onChange, onPressAdd}) {
     return (
         <View style={styles.container}>
-            <TextInput value={value} onChangeText={onChange} style={styles.input} />
+            <TextInput placeholder="Write something" value={value} onChangeText={onChange} style={styles.input} />
             <TouchableOpacity onPress={onPressAdd} style={styles.addButton}>
                 <Text style={styles.buttonStyles}>+</Text>
             </TouchableOpacity>
